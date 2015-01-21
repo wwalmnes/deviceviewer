@@ -1,0 +1,64 @@
+<!--[if lt IE 7]>      <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class=" js touch csstransforms csstransforms3d"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=2">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+</head>
+<body class="">
+    <div class="fluid-container">
+        <div class="row">
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <div class="col s2">
+                            <a href="#" class="brand-logo">Device Viewer</a>
+
+                        </div>
+                        <div class="col offset-s3 s5">
+                            <div id="iframeURLEl" class="input-field valign-wrapper">
+                                <input id="iframeURLInput" type="text" placeholder="http://www.vg.no" required>
+                                <label for="iframeURLInput"><i class="mdi-action-search"></i></label>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <ul id="placementDrop" class="dropdown-content">
+                                <!-- <li><a id="deviceBtn-rotate" href="">Rotate</a></li> -->
+                                <li class="divider"></li>
+                                <li><a href="#!">three</a></li>
+                            </ul>
+                            <ul id="deviceDrop" class="dropdown-content">
+                                <li><a id="deviceBtn-iphone6" href="">iPhone 6</a></li>
+                                <li><a id="deviceBtn-ipad" href="">iPad Air</a></li>
+                                <li class="divider"></li>
+                                <li><a id="deviceBtn-samsungs5" href="">Samsung S5</a></li>
+                                <li><a id="deviceBtn-samsungnote" href="">Samsung Note</a></li>
+                            </ul>
+                            <ul class="right side-nav">
+                                <li><a id="deviceBtn-rotate" href="">Rotate</a></li>
+                                <!-- <li><a class="dropdown-button" href="#!" data-activates="placementDrop">Placement<i class="mdi-navigation-arrow-drop-down right"></i></a></li> -->
+                                <li><a class="dropdown-button" href="#!" data-activates="deviceDrop">Device<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div id="device-container" class="container device-iphone6">
+        <iframe id="iframeTopBanner" class="changeURLOfThis" scrolling="no" frameborder="0" src="http://localhost:9090/godt.html" style="width: 100%; height: 100%; padding: 0px; border-width: 0px;"></iframe>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

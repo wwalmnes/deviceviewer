@@ -1,0 +1,120 @@
+li a {
+    color: #EE6E73;
+}
+
+#iframeURLEl {
+    background: #fff;
+    margin: 3px 0 0;
+}
+
+#iframeURLInput {
+    margin: 0 0 0 25px;
+    height: 90%;
+    color: #EE6E73;
+}
+
+#iframeURLEl label {
+    margin: -1px 15px;
+}
+
+#iframeURLEl label i {
+    color: #EE6E73;
+}
+
+#device-container {
+    -webkit-transition: transform 0.8s ease-out;
+    -moz-transition: transform 0.8s ease-out;
+    -ms-transition: transform 0.8s ease-out;
+    -o-transition: transform 0.8s ease-out;
+    transition: transform 0.8s ease-out;
+}
+
+.rotateCW {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.rotateCCW {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+div.device-iphone6 {
+    position:relative;
+    padding: 0;
+    margin: 160px auto;
+    width: 375px;
+    height: 667px;
+}
+
+div.device-iphone6:after {
+    position: absolute;
+/*    top: 50%;
+    right: 50%;
+    bottom: auto;
+    left: auto;*/
+    width: 432px;
+    height: 882px;
+    -webkit-transform: translate3d(-29px, -774px, 0);
+    -ms-transform: translate3d(-29px, -774px, 0);
+    -o-transform: translate3d(-29px, -774px, 0);
+    transform: translate3d(-29px, -774px, 0);
+    background: url('../images/chrome-iphone6-432x882@2x.jpg') no-repeat;
+    content: '';
+    display: block;
+    background-size: contain;
+    z-index: -1;
+    overflow: hidden;
+}
+
+div.rotate:after {
+    -webkit-transform: translate3d(116px, -630px, 0);
+    -ms-transform: translate3d(116px, -630px, 0);
+    -o-transform: translate3d(116px, -630px, 0);
+    transform: translate3d(116px, -630px, 0);
+}
+
+
+iframe .rotateCW {
+    -webkit-transform: translate3d(115px, -628px, 0);
+    -ms-transform: translate3d(115px, -628px, 0);
+    -o-transform: translate3d(115px, -628px, 0);
+    transform: translate3d(115px, -628px, 0);
+}
+
+div.device-ipad {
+    position:relative;
+    padding: 0;
+    margin: 160px auto;
+    width: 1024px;
+    height: 768px;
+}
+
+div.device-ipad:after {
+    position: absolute;
+ /*   top: 50%;
+    right: 50%;
+    bottom: auto;
+    left: auto;*/
+    width: 1294px;
+    height: 1030px;
+    -webkit-transform: translate3d(-136px, -888px, 0);
+    -ms-transform: translate3d(-136px, -888px, 0);
+    -o-transform: translate3d(-136px, -888px, 0);
+    transform: translate3d(-136px, -888px, 0);
+    background: url('../images/ipad.png') no-repeat;
+    content: '';
+    display: block;
+    background-size: contain;
+    z-index: -1;
+        overflow: hidden;
+}
+
+.mdi-action-search {
+    cursor: pointer;
+}
