@@ -1,3 +1,7 @@
+body {
+    overflow: hidden; /* Review: Not sure if I want this...  */
+}
+
 li a {
     color: #EE6E73;
 }
@@ -72,12 +76,20 @@ div.device-iphone6:after {
     overflow: hidden;
 }
 
-div.rotate:after {
+div.rotate.device-iphone6:after {
     -webkit-transform: translate3d(116px, -630px, 0);
     -ms-transform: translate3d(116px, -630px, 0);
     -o-transform: translate3d(116px, -630px, 0);
     transform: translate3d(116px, -630px, 0);
 }
+
+div.rotate.device-ipad:after {
+    -webkit-transform: translate3d(-263px, -1003px, 0);
+    -ms-transform: translate3d(-263px, -1003px, 0);
+    -o-transform: translate3d(-263px, -1003px, 0);
+    transform: translate3d(-263px, -1003px, 0);
+}
+
 
 
 iframe .rotateCW {
@@ -122,5 +134,9 @@ div.device-ipad:after {
 .dropdown-button {
     text-align: right;
     width: 150px;
+}
+
+#super-container {
+    transform: scale(0.8);
 }
 
