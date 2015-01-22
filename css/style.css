@@ -118,3 +118,9 @@ div.device-ipad:after {
 .mdi-action-search {
     cursor: pointer;
 }
+
+.dropdown-button {
+    text-align: right;
+    width: 150px;
+}
+

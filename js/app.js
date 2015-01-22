@@ -27,16 +27,22 @@ $(function () {
 
     $('#deviceBtn-rotate').on('click', function(e) {
         e.preventDefault();
-        $deviceContainer.addClass('rotateCW');
+        $deviceContainer.toggleClass('rotateCW');
 
         window.setTimeout(function() {
             var tmpWidth = $deviceContainer.width();
             var tmpHeight = $deviceContainer.height();
             $deviceContainer.height(tmpWidth);
             $deviceContainer.width(tmpHeight);
-            $deviceContainer.css({'margin-top': '292px'});
-            $deviceContainer.find('iframe').addClass('rotateCCW');
-            $deviceContainer.addClass('rotate');
+            if ($deviceContainer.hasClass('rotateCW')) {
+                $deviceContainer.css({'margin-top': '292px'});
+            }
+            else {
+                $deviceContainer.css({'margin-top': '160px'});
+            }
+
+            $deviceContainer.find('iframe').toggleClass('rotateCCW');
+            $deviceContainer.toggleClass('rotate');
         }, 805);
 
         // $deviceContainer.css({
