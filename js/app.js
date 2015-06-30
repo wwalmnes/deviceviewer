@@ -24,19 +24,27 @@ $(function () {
         $iframeEl = $deviceContainer.find('iframe');
 
     var changeIframeSrc = function () {
-        // TODO: Check if valid URL.
-        $iframeEl.attr('src', $('#iframeURLInput').val());
+        var urlInput = $('#iframeURLInput').val();
+        if (urlInput.indexOf('http://') !== -1) {
+            $iframeEl.attr('src', urlInput);
+        }
+        // TODO: Review if this is an annoying feedback.
+        else {
+            $('#validURLModal').openModal();
+            window.setTimeout(function () {
+                $('#validURLModal').closeModal();
+            }, 2000);
+        }
+
     };
 
     var getDeviceStyle = function () {
         var deviceSpec;
         spec.forEach(function (s) {
-            console.log('comparing ' + s.device + ' with ' + currentDevice);
             if (s.device === currentDevice) {
                 deviceSpec = s;
             }
         });
-        console.log(deviceSpec);
         return deviceSpec;
      };
 
